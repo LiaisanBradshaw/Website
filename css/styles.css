@@ -1,8 +1,8 @@
 body{ 
     padding: 0; 
-    background-color:black !important;
+    background-color:white !important;
     font-family: 'Abril Fatface', cursive;
-    color: white;
+    color: black;
     
 }
 canvas {
@@ -19,7 +19,9 @@ nav{
     background-color: black;
     font-family: 'Abril Fatface', cursive;
     font-size: 20px;
+
 }
+
 .nav-item{
     display:flex;
     justify-content: space-between;
@@ -40,8 +42,8 @@ img:hover{
     cursor: pointer;
 }
 
-h1{
-    color: white;
+h2{
+    color: black;
     font-size: 50px;
     font-weight: bold;
     font-family: monospace;
@@ -50,24 +52,7 @@ h1{
     margin: 30px;
     text-align: center;
   }
-  h1 span{
-    transition: .5s linear
-  }
-  h1:hover span:nth-child(1){
-    margin-right: 5px
-  }
-  h1:hover span:nth-child(1):after{
-    content: " ME ";
-  }
-  h1:hover span:nth-child(2){
-    margin-left: 30px
-  }
-  h1:hover span{
-    color: #fff;
-    text-shadow: 0 0 30px red,
-                 0 0 40px red, 
-                 0 0 60px red;
-  }
+  
 
   #name{
     width:100%;
@@ -75,23 +60,36 @@ h1{
     font-family: 'Abril Fatface', cursive;
     opacity: 70%;
   }
-  #name2{
-    width:100%;
-    font-size: 9em;
-    font-family: 'Abril Fatface', cursive;
-    opacity: 70%;
-  }
+
 
   .summary{
     color:white;
     font-size: 1.5em;
-    background-color: rgba(10, 9, 9, 0.5);
+    background-color: rgba(10, 9, 9, 0.7);
     margin: 50px;
     text-align: justify;
     padding: 10px;
     font-family: monospace;
     
   }
+
+  .row{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px auto;
+    justify-content: center;
+  
+  }
+
+  [class*=col-]{
+    
+    min-height: 100px;
+    margin-left: .5%;
+    margin-right: .5%;
+    
+  }
+
+    
 
  @media screen and (max-width: 800px){
     canvas{
@@ -105,8 +103,5 @@ h1{
     #name{
       font-size: 2.5em;
     }
-    #name2{
-      font-size: 2.5em;
-      text-align: center;
-    }
+   
  }

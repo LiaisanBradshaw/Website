@@ -17,7 +17,7 @@ const line = () => {
 // Draw random line
 const w = canvas.width;
 const h = canvas.height;
-ctx.strokeStyle= 'white';
+ctx.strokeStyle= 'black';
 ctx.strokeWidth = 4;
 
 
@@ -41,7 +41,7 @@ setInterval(line, 100);
 
 const shift = -3;
 const loop = () => {
-ctx.fillStyle = 'rgba(0, 0, 0, 0.005)';
+ctx.fillStyle = 'rgba(255, 255, 255, 0.005)';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 ctx.drawImage(ctx.canvas, 0, 0, canvas.width, canvas.height-shift, 0, shift, canvas.width, canvas.height-shift);
