@@ -59,3 +59,15 @@ function playAudio(){
     }
     
 }
+
+//Slick Slider JS
+$('#projects').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	arrows: false,
+	dots: true,
+	autoplaySpeed: 5000,
+	speed: 500,
+});

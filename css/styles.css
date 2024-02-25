@@ -1,12 +1,12 @@
 body{ 
     padding: 0; 
     background-color:white !important;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', cursive !important;
     color: black;
     
 }
 canvas {
-position: fixed;
+position: absolute;
 left: 0;
 top: 0;
 width: 100%;
@@ -18,7 +18,7 @@ z-index: -1;
 nav{
     background-color: black;
     font-family: 'Abril Fatface', cursive;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -29,8 +29,7 @@ nav{
 }
 
 img{
-    
-    height: 600px;
+    width: 100%;
     text-align: center;
     z-index: 1;
     display: block;
@@ -41,56 +40,50 @@ img{
 img:hover{
     cursor: pointer;
 }
-
-h2{
-    color: black;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    letter-spacing: 7px;
-    cursor: pointer;
-    margin: 30px;
-    text-align: center;
-  }
   
-
-  #name{
-    width:100%;
-    font-size: 9em;
-    font-family: 'Abril Fatface', cursive;
-    opacity: 70%;
-  }
-
 
   .summary{
-    color:white;
+    color:black;
     font-size: 1.5em;
-    background-color: rgba(10, 9, 9, 0.7);
     margin: 50px;
     text-align: justify;
-    padding: 10px;
-    font-family: monospace;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+   
     
+  } 
+
+
+
+  .contact{
+    text-align: center;  
+    margin-bottom: 30px;
   }
 
-  .row{
-    display: flex;
-    flex-flow: row wrap;
-    margin: 15px auto;
-    justify-content: center;
+  .contact h1{
+    font-size: 70px;
+  }
+
+  input{
+    border: none;
+    border-bottom: solid;
+    padding-bottom: 30px;
+  }
+
+  input:focus, textarea:focus{
+    outline: none;
+  }
+
+  textarea{
+    border: none;
+    border-bottom: solid;
+  }
+
+
   
-  }
 
-  [class*=col-]{
-    
-    min-height: 100px;
-    margin-left: .5%;
-    margin-right: .5%;
-    
-  }
 
-    
-
+  
  @media screen and (max-width: 800px){
     canvas{
         width: 100%;
